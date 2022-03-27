@@ -1,3 +1,3 @@
-# The-Whitelist
-A whitelisting dapp for NFT collection
+# NFT collection
+An NFT collection
 (Still in progress)
