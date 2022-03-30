@@ -31,6 +31,11 @@ contract Degens is ERC721Enumerable, Ownable {
     whitelist = IWhitelist(whitelistContract);
   }
 
+  function startPresale() public onlyOwner {
+    presaleStarted = true;
+    presaleEndTime = block.timestamp + 5 minutes;
+  }
+
   function presaleMint() public payable onlyWhenNotPaused {
     require(
       presaleStarted && block.timestamp < presaleEndTime,
