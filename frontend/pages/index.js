@@ -21,7 +21,7 @@ export default function Home() {
       const whitelistContract = new Contract(NFT_CONTRACT_ADDRESS, abi, signer);
 
       const tx = await whitelistContract.presaleMint({
-        value: utils.parseEther("0.01"),
+        value: utils.parseEther("0.1"),
       });
       setLoading(true);
       await tx.wait();
