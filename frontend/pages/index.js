@@ -145,9 +145,9 @@ export default function Home() {
     const web3Provider = new providers.Web3Provider(provider);
 
     const { chainId } = await web3Provider.getNetwork();
-    if (chainId !== 4) {
-      window.alert("Change the network to rinkeby");
-      throw new Error("Change network to rinkeby");
+    if (chainId !== 80001) {
+      window.alert("Change the network to mumbai");
+      throw new Error("Change network to mumbai");
     }
 
     if (needSigner) {
