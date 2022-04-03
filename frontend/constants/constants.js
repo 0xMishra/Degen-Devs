@@ -1,4 +1,4 @@
 import contract from "./Degens.json";
 export const abi = contract.abi;
 export const NFT_CONTRACT_ADDRESS =
-  "0x03dc32FF5E34b550345c7bb62f6758Ca894994c3";
+  "0x9C7616B01108ED5168491e111327CE239498F9A0";
